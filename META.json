@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "boost Cookie::Baker's crush_cookie",
    "author" : [
       "Masahiro Nagano <kazeburo@gmail.com>"
    ],
@@ -53,5 +53,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/kazeburo/Cookie-Baker-XS/issues"
+      },
+      "homepage" : "https://github.com/kazeburo/Cookie-Baker-XS",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/kazeburo/Cookie-Baker-XS.git",
+         "web" : "https://github.com/kazeburo/Cookie-Baker-XS"
+      }
+   },
    "version" : "0.01"
 }
