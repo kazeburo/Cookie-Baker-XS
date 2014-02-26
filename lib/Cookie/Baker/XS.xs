@@ -103,8 +103,8 @@ crush_cookie(cookie)
         Newx(key, key_size, char);
         src = (char *)SvPV(cookie,src_len);
         prev = src;
-        for ( i=0; i<=src_len; i++ ) {
-            if ( i == src_len || src[i] == ';' || src[i] == ','  ) {
+        for ( i=0; i<src_len; i++ ) {
+            if ( src[i] == ';' || src[i] == ','  ) {
                 while ( prev[0] == ' ' ) {
                     prev++;
                     prev_s++;
@@ -122,9 +122,26 @@ crush_cookie(cookie)
                             url_decode_val(aTHX_ prev, p - prev + 1, la ), 0);
                     }
                 }
-                if ( i+1 < src_len ) {
-                    prev = &src[i+1];
-                    prev_s = i + 1;
+                prev = &src[i+1];
+                prev_s = i + 1;
+            }
+        }
+        if ( i > prev_s ) {
+            while ( prev[0] == ' ' ) {
+                prev++;
+                prev_s++;
+            }
+            la = i - prev_s;
+            while ( prev[la-1] == ' ' ) {
+                --la;
+            }
+            p = memchr(prev, '=', i - prev_s);
+            if ( p != NULL ) {
+                renewmem(aTHX_ &key, &key_size, (p - prev)*3+1);
+                url_decode_key(prev, p - prev, key, &key_len);
+                if ( !hv_exists(hv, key, key_len) ) {
+                    (void)hv_store(hv, key, key_len,
+                        url_decode_val(aTHX_ prev, p - prev + 1, la ), 0);
                 }
             }
         }
