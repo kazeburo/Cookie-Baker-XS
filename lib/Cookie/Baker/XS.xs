@@ -70,6 +70,7 @@ url_decode_val(pTHX_ const char *src, int start, int end) {
     }
 
     SvCUR_set(dst, dlen);
+    *SvEND(dst) = '\0';
     SvPOK_only(dst);
     return dst;
 }
