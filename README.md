@@ -6,7 +6,6 @@ Cookie::Baker::XS - boost Cookie::Baker's crush\_cookie
 
     use Cookie::Baker::XS qw/crush_cookie/;
     
-
     my $cookies_hashref = crush_cookie($headers->header('Cookie'));
 
 # DESCRIPTION
@@ -14,7 +13,7 @@ Cookie::Baker::XS - boost Cookie::Baker's crush\_cookie
 Cookie::Baker::XS provides cookie string parser that implemented by XS.
 This modules only provides parser, does not have a generator function.
 
-For more details, see [Cookie::Baker](http://search.cpan.org/perldoc?Cookie::Baker)'s document
+For more details, see [Cookie::Baker](https://metacpan.org/pod/Cookie::Baker)'s document
 
 # BENCHMARK
 
@@ -26,7 +25,6 @@ For more details, see [Cookie::Baker](http://search.cpan.org/perldoc?Cookie::Bak
     pp  16593/s   -- -91%
     xs 182044/s 997%   --
     
-
     ## length($cookie) == 17
     Benchmark: running pp, xs for at least 1 CPU seconds...
             pp:  2 wallclock secs ( 1.05 usr +  0.01 sys =  1.06 CPU) @ 201749.06/s (n=213854)
@@ -37,7 +35,7 @@ For more details, see [Cookie::Baker](http://search.cpan.org/perldoc?Cookie::Bak
 
 # SEE ALSO
 
-[Cookie::Baker](http://search.cpan.org/perldoc?Cookie::Baker)
+[Cookie::Baker](https://metacpan.org/pod/Cookie::Baker)
 
 # LICENSE
 
