@@ -2,6 +2,10 @@ Revision history for Perl extension Cookie-Baker-XS
 
 {{$NEXT}}
 
+0.05 2015-06-10T16:56:06Z
+
+    - use MakeMaker for better cross-compiling support #2
+
 0.04 2014-11-19T01:19:39Z
 
     - add 0 terminate

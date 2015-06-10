@@ -12,7 +12,7 @@ use ExtUtils::MakeMaker;
 my %WriteMakefileArgs = (
     NAME     => 'Cookie::Baker::XS',
     DISTNAME => 'Cookie-Baker-XS',
-    VERSION  => '0.04',
+    VERSION  => '0.05',
     CONFIGURE_REQUIRES => {
   "ExtUtils::MakeMaker" => 0
 }
