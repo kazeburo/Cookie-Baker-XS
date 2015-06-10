@@ -1,2 +1,5 @@
 name = "Cookie-Baker-XS"
-# badges = ["travis"]
+badges = ["travis"]
+module_maker="ExtUtilsMakeMaker"
+
+

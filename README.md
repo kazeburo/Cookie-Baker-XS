@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/kazeburo/Cookie-Baker-XS.svg?branch=master)](https://travis-ci.org/kazeburo/Cookie-Baker-XS)
 # NAME
 
 Cookie::Baker::XS - boost Cookie::Baker's crush\_cookie
