@@ -28,3 +28,7 @@ MYMETA.*
 lib/Cookie/Baker/XS.c
 !lib/Cookie/Baker/ppport.h
 bench.pl
+Makefile
+XS.c
+pm_to_blib
+
