@@ -55,6 +55,13 @@ url_decode_val(pTHX_ const char *src, int start, int end) {
     int dlen = 0, i = 0;
     char *d;
     SV * dst;
+
+    // Values can be quoted
+    if ( src[start] == '"' && src[end-1] == '"' ) {
+        start++;
+        --end;
+    }
+
     dst = newSV(0);
     (void)SvUPGRADE(dst, SVt_PV);
     d = SvGROW(dst, (end - start) * 3 + 1);
