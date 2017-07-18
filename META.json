@@ -4,7 +4,7 @@
       "Masahiro Nagano <kazeburo@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v2.4.1, CPAN::Meta::Converter version 2.150005",
+   "generated_by" : "Minilla/v3.0.13, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "perl_5"
    ],
@@ -28,7 +28,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "0"
+            "ExtUtils::MakeMaker" : "6.64"
          }
       },
       "develop" : {
@@ -65,5 +65,5 @@
       }
    },
    "version" : "0.07",
-   "x_serialization_backend" : "JSON::PP version 2.27203"
+   "x_serialization_backend" : "JSON::PP version 2.27300_01"
 }
