@@ -20,6 +20,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install Dependencies
         run: |
-          curl -sL https://cpanmin.us/ | perl - -n Minilla
+          curl -sL https://cpanmin.us/ | perl - -n --with-develop --with-recommends --with-suggests --installdeps .
       - name: Run Tests
-        run: minil test
+        run: perl Makefile.PL
+      - name: Run Tests
+        run: make && make test
