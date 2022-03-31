@@ -4,7 +4,7 @@
       "Masahiro Nagano <kazeburo@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v3.1.10, CPAN::Meta::Converter version 2.150010",
+   "generated_by" : "Minilla/v3.1.16, CPAN::Meta::Converter version 2.150010",
    "license" : [
       "perl_5"
    ],
@@ -60,7 +60,7 @@
       "homepage" : "https://github.com/kazeburo/Cookie-Baker-XS",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/kazeburo/Cookie-Baker-XS.git",
+         "url" : "https://github.com/kazeburo/Cookie-Baker-XS.git",
          "web" : "https://github.com/kazeburo/Cookie-Baker-XS"
       }
    },
