@@ -66,7 +66,8 @@
    },
    "version" : "0.12",
    "x_contributors" : [
-      "Kevin M. Goess <cpan@goess.org>"
+      "Kevin M. Goess <cpan@goess.org>",
+      "Yoshikazu Sawa <883514+yoshikazusawa@users.noreply.github.com>"
    ],
    "x_serialization_backend" : "JSON::PP version 4.16",
    "x_static_install" : 0
