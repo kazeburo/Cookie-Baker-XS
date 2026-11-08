@@ -11,6 +11,12 @@ our @EXPORT_OK = qw/crush_cookie/;
 use XSLoader;
 XSLoader::load(__PACKAGE__, $VERSION);
 
+sub crush_cookie {
+   my ($cookie, $raw_keys) = @_;
+   $raw_keys //= 0;
+   return xs_crush_cookie($cookie, $raw_keys);
+}
+
 1;
 __END__
 
