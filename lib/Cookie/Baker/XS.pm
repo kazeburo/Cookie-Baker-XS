@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use base qw/Exporter/;
 
-our $VERSION = "0.12";
+our $VERSION = "0.13";
 our @EXPORT_OK = qw/crush_cookie/;
 
 use XSLoader;
@@ -13,7 +13,7 @@ XSLoader::load(__PACKAGE__, $VERSION);
 
 sub crush_cookie {
    my ($cookie, $raw_keys) = @_;
-   $raw_keys //= 0;
+   $raw_keys = 0 if !defined $raw_keys;
    return xs_crush_cookie($cookie, $raw_keys);
 }
 
