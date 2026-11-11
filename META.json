@@ -64,7 +64,7 @@
          "web" : "https://github.com/kazeburo/Cookie-Baker-XS"
       }
    },
-   "version" : "0.12",
+   "version" : "0.13",
    "x_contributors" : [
       "Kevin M. Goess <cpan@goess.org>",
       "Yoshikazu Sawa <883514+yoshikazusawa@users.noreply.github.com>"
