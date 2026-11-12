@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use base qw/Exporter/;
 
-our $VERSION = "0.13";
+our $VERSION = "0.14";
 our @EXPORT_OK = qw/crush_cookie/;
 
 use XSLoader;
